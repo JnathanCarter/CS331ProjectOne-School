@@ -44,18 +44,23 @@ public class Student {
                 if(testNumber == 1){
                         test.setTest1(testScore);
                 } else if (testNumber == 2){
-                        test.setTest2(testscore);
+                        test.setTest2(testScore);
                 } else {
-                        test.setTest3(testScore)
-                }
+                        test.setTest3(testScore);
                 }
 
         }
 
         public int getTestScore(int testNumber) {
-                int result = 0;
+               if(testNumber == 1){
+                        return test.getTest1();
+               } else if(testNumber == 2){
+                        return test.getTest2();
+               } else {
+                        return test.getTest3();
+               }
 
-                return result;
+                
         }
 
         public double average() {
