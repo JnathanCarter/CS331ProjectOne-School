@@ -63,9 +63,32 @@ public class Student {
                 
         }
 
-        public double average() {
-                double result = 0;
-                return result;
-
         }
+        class  TestScore {
+
+                private int test1;
+                private int test2;
+                private int test3;
+
+                //constructor
+                public TestScore(int t1, int t2, int t3){
+                        test1 = t1;
+                        test2 = t2;
+                        test3 = t3;
+                }
+
+                //setters
+                public void setTest1 (int testScore){
+                        this.test1 = testScore;
+                }
+                public void setTest2 (int testScore){
+                        this.test2 = testScore;
+                }
+                public void setTest3 (int testScore){
+                        this.test3 = testScore;
+                }
+                //getters
+                public int getTest1()
+
+        
 }
