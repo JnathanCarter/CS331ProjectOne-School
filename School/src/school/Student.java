@@ -1,15 +1,39 @@
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package school;
 
 /**
  *
- * @author johnc
+ * @author johnc && maurzel
  */
+class TestScore {
+
+        private int test1;
+        private int test2;
+        private int test3;
+
+        // constructor
+        public TestScore(int t1, int t2, int t3) {
+                test1 = t1;
+                test2 = t2;
+                test3 = t3;
+        }
+
+        // setters
+        public void setTest1(int testScore) {
+                this.test1 = testScore;
+        }
+
+        public void setTest2(int testScore) {
+                this.test2 = testScore;
+        }
+
+        public void setTest3(int testScore) {
+                this.test3 = testScore;
+        }
+
+        // getters
+        public int getTest1();
+}
+
 public class Student {
 
         private String firstName, lastName;
@@ -21,7 +45,7 @@ public class Student {
                 this.lastName = last;
                 this.homeAddress = home;
                 this.schoolAddress = school;
-                test = new Testscore(0, 0, 0);
+                TestScore test = new TestScore(0, 0, 0);
         }
 
         // overloaded constructor
@@ -30,7 +54,7 @@ public class Student {
                 this.lastName = last;
                 this.homeAddress = home;
                 this.schoolAddress = school;
-                test = new Testscore(t1, t2, t3);
+                TestScore test = new TestScore(t1, t2, t3);
 
         }
 
@@ -43,52 +67,25 @@ public class Student {
         }
 
         public void setTestScore(int testNumber, int testScore) {
-                if(testNumber == 1){
+                if (testNumber == 1) {
                         test.setTest1(testScore);
-                } else if (testNumber == 2){
+                } else if (testNumber == 2) {
                         test.setTest2(testScore);
                 } else {
                         test.setTest3(testScore);
                 }
 
+        }
+
         public int getTestScore(int testNumber) {
-               if(testNumber == 1){
+                if (testNumber == 1) {
                         return test.getTest1();
-               } else if(testNumber == 2){
+                } else if (testNumber == 2) {
                         return test.getTest2();
-               } else {
+                } else {
                         return test.getTest3();
-               }
+                }
 
-                
         }
 
-        }
-        class  TestScore {
-
-                private int test1;
-                private int test2;
-                private int test3;
-
-                //constructor
-                public TestScore(int t1, int t2, int t3){
-                        test1 = t1;
-                        test2 = t2;
-                        test3 = t3;
-                }
-
-                //setters
-                public void setTest1 (int testScore){
-                        this.test1 = testScore;
-                }
-                public void setTest2 (int testScore){
-                        this.test2 = testScore;
-                }
-                public void setTest3 (int testScore){
-                        this.test3 = testScore;
-                }
-                //getters
-                public int getTest1()
-
-        
 }
