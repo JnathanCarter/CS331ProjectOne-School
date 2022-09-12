@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,15 +16,15 @@ public class Student {
         private Address homeAddress, schoolAddress;
         private TestScore test;
 
-
         public Student(String first, String last, Address home, Address school) {
                 this.firstName = first;
                 this.lastName = last;
                 this.homeAddress = home;
                 this.schoolAddress = school;
-                test = new Testscore(0,0,0);
+                test = new Testscore(0, 0, 0);
         }
-        //overloaded constructor
+
+        // overloaded constructor
         public Student(String first, String last, Address home, Address school, int t1, int t2, int t3) {
                 this.firstName = first;
                 this.lastName = last;
@@ -32,6 +33,7 @@ public class Student {
                 test = new Testscore(t1, t2, t3);
 
         }
+
         public String toString() {
                 String result;
                 result = this.firstName + " " + this.lastName + "\n";
@@ -48,8 +50,6 @@ public class Student {
                 } else {
                         test.setTest3(testScore);
                 }
-
-        }
 
         public int getTestScore(int testNumber) {
                if(testNumber == 1){
