@@ -21,8 +21,7 @@ public class Student {
                 this.schoolAddress = school;
         }
 
-        public String toString
-        {
+        public String toString() {
                 String result;
                 result = this.firstName + " " + this.lastName + "\n";
                 result += "Home Address: \n" + homeAddress + "\n";
