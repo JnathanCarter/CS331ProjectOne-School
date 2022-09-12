@@ -28,4 +28,20 @@ public class Student {
                 result += "School address: \n" + schoolAddress;
                 return result;
         }
+
+        public void setTestScore(int testNumber, int testScore) {
+
+        }
+
+        public int getTestScore(int testNumber) {
+                int result = 0;
+
+                return result;
+        }
+
+        public double average() {
+                double result = 0;
+                return result;
+
+        }
 }
