@@ -31,24 +31,34 @@ class TestScore {
         }
 
         // getters
-        public int getTest1();{
+        public int getTest1()
+
+        {
                 return test1;
         }
-        public int getTest2();{
+
+        public int getTest2()
+
+        {
                 return test2;
         }
-        public int getTest3();{
+
+        public int getTest3()
+
+        {
                 return test3;
         }
+
         public String toString() {
                 double average = (test1 + test2 + test3) / 3.0;
-                result ="\nTest1 Score: "+ test1 + "\n";
-                result += "Test2 Score: "+ test2 + "\n";
-                result += "Test3 Score: "+ test3 + "\n";
+                String result;
+                result = "\nTest1 Score: " + test1 + "\n";
+                result += "Test2 Score: " + test2 + "\n";
+                result += "Test3 Score: " + test3 + "\n";
                 result += "Average Test Score: " + average;
                 return result;
         }
-}               
+}
 
 public class Student {
 
@@ -61,7 +71,7 @@ public class Student {
                 this.lastName = last;
                 this.homeAddress = home;
                 this.schoolAddress = school;
-                TestScore test = new TestScore(0, 0, 0);
+                this.test = new TestScore(0, 0, 0);
         }
 
         // overloaded constructor
@@ -70,7 +80,7 @@ public class Student {
                 this.lastName = last;
                 this.homeAddress = home;
                 this.schoolAddress = school;
-                TestScore test = new TestScore(t1, t2, t3);
+                this.test = new TestScore(t1, t2, t3);
 
         }
 
@@ -79,6 +89,7 @@ public class Student {
                 result = this.firstName + " " + this.lastName + "\n";
                 result += "Home Address: \n" + homeAddress + "\n";
                 result += "School address: \n" + schoolAddress;
+                result += this.test.toString();
                 return result;
         }
 
